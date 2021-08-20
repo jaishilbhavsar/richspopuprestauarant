@@ -17,18 +17,28 @@ module.exports = class extends Page {
                 console.log(oEntity);
                 oEntity.id = key;
                 sResult += `
+                <div class="row">
+                <div class="col">
             <h2>${oEntity.title}</h2>
             <p>Description: ${oEntity.full_description}</p>
             <p>Location: ${oEntity.location}</p>
             <p>Cost: ${oEntity.cost}</p>
             <p>date:${oEntity.date}</p>
-            <p><img src="${oEntity.featured_image}" alt="${oEntity.title}"</p>
+            </div>
+            <div class="col">
+            <div class="img-fluid"><img src="${oEntity.featured_image}" alt="${oEntity.title}"</div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col">
             <form>
                 <button id="button_${n++}" disabled class="paypal_button" data-cost="12.99">
                 Order now
                 </button>
                 
                 </form>
+                </div>
+                </div>
                 `;
             }
         });

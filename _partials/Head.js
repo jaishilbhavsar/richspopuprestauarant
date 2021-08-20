@@ -1,6 +1,6 @@
 module.exports = class {
   render() {
-    const sClientID = process.env.SB_CLIENT_ID || 'put your client id here for testing ... Make sure that you delete it before committing'
+    const sClientID = process.env.SB_CLIENT_ID || 'AdKOentvDkOY41LlVuB_3qRS5jRAcO0YLFeqXhIpOQvGtzLYtwJgh6O0dpEF8Dn60XtW7OL_GPZjLrrr'
     return `
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/main.css" />
