@@ -18,11 +18,11 @@ module.exports = class extends Page {
                 oEntity.id = key;
                 sResult += `
             <h2>${oEntity.title}</h2>
-            <p><img src="${oEntity.featured_image}" alt="${oEntity.title}"</p>
             <p>Description: ${oEntity.full_description}</p>
             <p>Location: ${oEntity.location}</p>
             <p>Cost: ${oEntity.cost}</p>
             <p>date:${oEntity.date}</p>
+            <p><img src="${oEntity.featured_image}" alt="${oEntity.title}"</p>
             <form>
                 <button id="button_${n++}" disabled class="paypal_button" data-cost="12.99">
                 Order now
