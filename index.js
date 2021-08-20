@@ -13,7 +13,6 @@ module.exports = class extends Page {
         Object.keys(oJson).map((key) => {
             console.log(key);
             if (key != 'users') {
-
                 const oEntity = oJson[key];
                 console.log(oEntity);
                 oEntity.id = key;
